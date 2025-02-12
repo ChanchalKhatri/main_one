@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 const Card = () => {
   const [data, setData] = useState([]);
   axios
-    .get("http://localhost:8000/data")
+    .get("https://main-one.onrender.com/data")
     .then((response) => setData(response.data))
     .catch((error) => {
       console.error("Error fetching data:", error);
